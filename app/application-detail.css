@@ -1,0 +1,131 @@
+.application-detail-receipt {
+  display: grid;
+  gap: 18px;
+  padding: 20px 0;
+  border-top: 1px solid #e3e9f2;
+}
+
+.application-detail-receipt:first-of-type {
+  border-top: 0;
+}
+
+.application-detail-preview {
+  min-height: 280px;
+  overflow: hidden;
+  border: 1px solid #d9e2ef;
+  border-radius: 13px;
+  background: repeating-conic-gradient(#f7f9fd 0 25%, #f1f4f9 0 50%) 50% / 16px 16px;
+}
+
+.application-detail-preview > a,
+.application-detail-preview > span {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  place-items: center;
+  color: #69758d;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.application-detail-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.application-detail-pdf {
+  background: #fff7eb;
+  color: #a45e00 !important;
+}
+
+.application-detail-fields {
+  padding: 2px 0;
+}
+
+.application-detail-receipt-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+
+.application-detail-receipt-heading > b {
+  font-size: 15px;
+}
+
+.application-detail-fields dl {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e0e7f1;
+  border-radius: 11px;
+}
+
+.application-detail-fields dl > div {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid #e4e9f2;
+}
+
+.application-detail-fields dl > div:first-child {
+  border-top: 0;
+}
+
+.application-detail-fields dt {
+  color: #68758d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.application-detail-fields dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.application-detail-receipt-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.application-detail-receipt-actions form {
+  margin: 0;
+}
+
+.application-detail-receipt .returned-edit-form {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 761px) {
+  .application-detail-receipt {
+    grid-template-columns: minmax(280px, 1.05fr) minmax(270px, 0.95fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .application-detail-receipt {
+    grid-template-columns: 1fr;
+  }
+
+  .application-detail-preview,
+  .application-detail-preview > a,
+  .application-detail-preview > span,
+  .application-detail-preview img {
+    min-height: 235px;
+  }
+
+  .application-detail-fields dl > div {
+    grid-template-columns: 82px minmax(0, 1fr);
+  }
+}

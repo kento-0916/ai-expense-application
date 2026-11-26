@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import './wide-layout.css';
+import './application-detail.css';
 
 export const metadata: Metadata = {
   title: '経費申請',
