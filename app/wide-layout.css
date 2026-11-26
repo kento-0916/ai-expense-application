@@ -1,0 +1,47 @@
+/* Wide desktop layouts for reports and application detail */
+@media (min-width: 761px) {
+  .application-page > .detail-layout {
+    width: min(1180px, calc(100% - clamp(64px, 9vw, 180px)));
+    max-width: none;
+    padding: clamp(44px, 5vw, 72px) 0 88px;
+  }
+
+  .application-page > .detail-layout .detail-title {
+    max-width: none;
+    margin: 0 0 30px;
+    text-align: left;
+  }
+
+  .detail-page .detail-summary {
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+
+  .application-page > .detail-layout .receipt-list {
+    border-radius: 18px;
+  }
+
+  .application-page > .detail-layout .receipt-card {
+    grid-template-columns: 46px minmax(0, 1fr) minmax(130px, auto);
+    padding: 21px 28px;
+  }
+
+  .application-page > .detail-layout .receipt-card.with-preview {
+    grid-template-columns: 46px 150px minmax(0, 1fr) minmax(130px, auto);
+  }
+
+  .application-page > .detail-layout .detail-receipt-preview {
+    width: 150px;
+    height: 112px;
+  }
+
+  .application-page > .detail-layout .summary-grid {
+    gap: 18px;
+    margin: 0 0 30px;
+  }
+
+  .application-page > .detail-layout .summary-card {
+    min-height: 164px;
+    padding: 25px;
+  }
+}
